@@ -17,7 +17,15 @@ body {
 
 @media only screen and (max-width: 1024px) {
   body {
-    background-image: none;
+    background-image: url("../img/mobile_main_bg@1x.jpg");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  @media only screen and (max-width: 1024px) {
+    body {
+      background-image: url("../img/mobile_main_bg@2x.jpg");
+    }
   }
 }
 
@@ -724,6 +732,10 @@ video {
   margin-top: -100px;
 }
 
+.mt-\[-90px\]{
+  margin-top: -90px;
+}
+
 .\!block{
   display: block !important;
 }
@@ -782,6 +794,10 @@ video {
 
 .w-12{
   width: 3rem;
+}
+
+.w-2\/3{
+  width: 66.666667%;
 }
 
 .w-3{
@@ -1132,6 +1148,12 @@ video {
 
 .filter{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 640px){
+  .sm\:max-w-\[420px\]{
+    max-width: 420px;
+  }
 }
 
 @media (min-width: 1024px){
