@@ -833,6 +833,10 @@ video {
   width: 255px;
 }
 
+.w-3\/4{
+  width: 75%;
+}
+
 .max-w-\[420px\]{
   max-width: 420px;
 }
@@ -1179,6 +1183,11 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:w-max{
+    width: -moz-max-content;
+    width: max-content;
+  }
+
   .sm\:max-w-\[420px\]{
     max-width: 420px;
   }
