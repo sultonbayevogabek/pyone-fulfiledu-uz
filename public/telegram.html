@@ -14,15 +14,22 @@
     <!--   DATE   -->
     <div class="flex gap-2 lg:gap-4 w-full">
       <div
-        class="flex-grow lg:flex-grow-0 lg:w-[255px] py-2.5 px-7 bg-[url('../img/bg_time.svg')] bg-cover bg-[center_bottom] bg-no-repeat text-center">
-        <div class="lg:text-3xl font-medium lg:mb-1">13-14-avgust</div>
-        <div class="text-[14px] lg:text-[18px]">Soat 20:00</div>
+        class="flex-grow lg:flex-grow-0 lg:w-[255px] py-2.5 px-7 text-center relative">
+        <div class="relative z-[1] lg:text-3xl font-medium lg:mb-1">13-14-avgust</div>
+        <div class="relative z-[1] text-[14px] lg:text-[18px]">Soat 20:00</div>
+
+        <span class="absolute top-0 left-0 right-0 bottom-0">
+          <img class="h-full w-full" src="img/bg_time.svg" alt="">
+        </span>
       </div>
 
       <div
-        class="flex-grow lg:flex-grow-0 lg:w-[255px] shrink-0 py-2.5 px-7 bg-[url('../img/bg_time.svg')] bg-cover bg-[center_bottom] bg-no-repeat text-center">
-        <div class="lg:text-3xl font-medium lg:mb-1">BEPUL</div>
-        <del class="text-[14px] lg:text-[18px]">200 000 so'm</del>
+        class="relative flex-grow lg:flex-grow-0 lg:w-[255px] shrink-0 py-2.5 px-7 text-center">
+        <div class="relative z-[1] lg:text-3xl font-medium lg:mb-1">BEPUL</div>
+        <del class="relative z-[1] text-[14px] lg:text-[18px]">200 000 so'm</del>
+        <span class="absolute top-0 left-0 right-0 bottom-0">
+          <img class="h-full w-full" src="img/bg_time.svg" alt="">
+        </span>
       </div>
     </div>
 
