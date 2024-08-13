@@ -45,21 +45,19 @@ try {
       return;
     }
 
-    if (phone?.length !== 12) {
+    if (phone?.length !== 9) {
       formAlert.textContent = 'Telefon raqamingizni kiriting';
       formAlert.classList.remove('hidden');
       return;
     }
 
-    if (name.length && phone?.length === 12) {
+    if (name.length && phone?.length === 9) {
       submitButton.setAttribute('disabled', true);
       submitButton.textContent = 'Yuborilmoqda...'
 
       localStorage.setItem('user', JSON.stringify({
-        name, phone, time: new Date().toLocaleString()
+        name, phone: '+998' + phone, time: new Date().toLocaleString()
       }))
-
-      formAlert.classList.remove('open');
       window.location.href = `../telegram.html`
     }
   })

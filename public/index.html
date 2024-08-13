@@ -117,7 +117,7 @@
   </div>
 </div>
 
-<div class="fixed inset-0 grid place-items-center p-3 overflow-auto z-20 bg-black bg-opacity-50 hidden"
+<div class="fixed inset-0 grid place-items-center p-3 overflow-auto z-20 bg-black bg-opacity-50"
      data-modal-backdrop data-modal-close>
   <form data-form class="w-full max-w-[520px] p-5 lg:p-10 bg-white rounded-[8px] lg:rounded-[12px] relative">
     <h2 class="mb-4 lg:mb-6 text-[28px] lg:text-[28px] font-semibold">Joy band qilish</h2>
@@ -127,16 +127,24 @@
 
     <label class="block w-full mb-4 lg:mb-6">
       <span class="block mb-1.5 text-[#48635B]">Ism</span>
-      <input class="w-full h-12 px-4 rounded-[8px] lg:rounded-[12px] bg-[#F3F7F8] border border-[#bed4da]"
-             id="name"
-             type="text" placeholder="Ismingizni kiriting" name="name">
+      <input
+        class="w-full h-12 px-4 rounded-[8px] lg:rounded-[12px] bg-[#F3F7F8] border border-[#bed4da] focus:outline-0"
+        id="name"
+        type="text" placeholder="Ismingizni kiriting" name="name">
     </label>
 
-    <label class="block w-full mb-4 lg:mb-6">
+    <label class="block w-full mb-4 lg:mb-6" for="phone">
       <span class="block mb-1.5 text-[#48635B]">Telefon raqami</span>
-      <input class="w-full h-12 px-4 rounded-[8px] lg:rounded-[12px] bg-[#F3F7F8] border border-[#bed4da]"
-             id="phone"
-             type="tel" value="+998" name="phone">
+
+      <span class="flex h-12 rounded-[8px] lg:rounded-[12px] border border-[#bed4da] bg-[#F3F7F8] overflow-hidden">
+        <input class="bg-transparent border-none focus:outline-0 pl-4 w-[6ch]" type="text" readonly value="+998">
+        <input class="grow bg-transparent border-none focus:outline-0"
+               id="phone"
+               type="text"
+               name="phone"
+               maxlength="12"
+        >
+      </span>
     </label>
 
     <button
@@ -153,7 +161,7 @@
 </div>
 
 <script src="js/script.js"></script>
-<script src="js/mask.js"></script>
+<script src="js/phone.js"></script>
 
 <!-- Meta Pixel Code -->
 <script>
