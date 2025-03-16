@@ -4,10 +4,11 @@
   const statistics = new Statistics();
   let user = JSON.parse(localStorage.getItem('user'));
 
-  document.querySelector('#joinToChannel')?.addEventListener('click', async (e) => {
-    e.target.setAttribute('disabled', 'true');
+  const joinButton = document.querySelector('#joinToChannel')
+  joinButton?.addEventListener('click', async (e) => {
+    joinButton.disabled = true;
     await statistics.onClickTgBtn();
-    e.target.removeAttribute('disabled');
+    joinButton.disabled = false;
     window.location.href = 'https://t.me/+-anOngXRXHw5Y2M6';
   })
 
