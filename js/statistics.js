@@ -1,7 +1,7 @@
 'use strict';
 
 class Statistics {
-  PROJECT_NAME = 'qobiliyat';
+  PROJECT_NAME = 'pyone-4-5-04-2025';
   DB_URL = 'https://webinar-statistics-default-rtdb.firebaseio.com/';
   ENTERED_DB = `${this.DB_URL}${this.PROJECT_NAME}-entered.json`;
   CLICKED_REG_BTN_DB = `${this.DB_URL}${this.PROJECT_NAME}-clicked-reg-btn.json`;
@@ -133,19 +133,16 @@ class Statistics {
   }
 
   async onAction(DB_URL, action, data = {userId: this.userId, time: this.time}) {
-    if (this.checkAction(action)) {
-      return;
-    }
+    if (!this.checkAction(action)) {
+      let response = await fetch(DB_URL, {
+        method: 'POST',
+        body: JSON.stringify(data)
+      })
 
-    let response = await fetch(DB_URL, {
-      method: 'POST',
-      body: JSON.stringify(data)
-    })
-
-    response = await response.json()
-    if (response && response.name) {
-      console.log(action)
-      this.recordAction(action)
+      response = await response.json()
+      if (response && response.name) {
+        this.recordAction(action)
+      }
     }
   }
 
