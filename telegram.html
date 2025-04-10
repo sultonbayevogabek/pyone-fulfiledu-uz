@@ -53,8 +53,24 @@
          </button>
 
          <div class="block lg:hidden relative">
-            <img class="w-3/4 mx-auto block" src="img/mentor.png"
-                 alt="Mentor image">
+           <picture class="w-3/4 mx-auto block">
+             <source
+               srcset="img/mentor.webp"
+               type="image/webp"
+             />
+
+             <source
+               srcset="img/mentor.png"
+               type="image/png"
+             />
+
+             <img
+               class="w-full h-full"
+               src="img/mentor.png"
+               srcset="img/mentor.png"
+               alt="Rasm tavsifi"
+             />
+           </picture>
          </div>
       </div>
    </div>
