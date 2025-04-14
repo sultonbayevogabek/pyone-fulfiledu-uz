@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0eb0b01b-c627-45ab-b44c-5332d220aa06" name="Changes" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/img/bg_main@1x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bg_main@1x.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg_main@2x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bg_main@2x.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg_mobile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bg_mobile.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/gift.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/gift.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/mentor.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/mentor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/mentor@1x.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/mentor@2x.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/mobile_main_bg@1x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/mobile_main_bg@1x.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/mobile_main_bg@2x.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/mobile_main_bg@2x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/excel.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/excel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telegram.html" beforeDir="false" afterPath="$PROJECT_DIR$/telegram.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +30,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/sultonbayevogabek/pyone-fulfiledu-uz.git&quot;,
-    &quot;accountId&quot;: &quot;96b77a6e-d0c2-4cbf-911d-84f2a02fc3e0&quot;
+    &quot;accountId&quot;: &quot;d8f2dac6-2e90-4298-b807-cfffb7fa378f&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -98,6 +91,9 @@
       <workItem from="1742287952443" duration="653000" />
       <workItem from="1742988398513" duration="925000" />
       <workItem from="1744034357837" duration="612000" />
+      <workItem from="1744309136371" duration="598000" />
+      <workItem from="1744455268371" duration="242000" />
+      <workItem from="1744650697623" duration="69000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -171,6 +167,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>
